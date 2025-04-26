@@ -1,0 +1,12 @@
+[book]
+authors = ["JJ"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Jezl Wiki"
+
+[build]
+create-missing = false
+
+[output.html.fold]
+enable = true
