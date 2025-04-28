@@ -17,6 +17,7 @@
    - [ec2 storage](./certifications/aws-solutions-architect/ec2-storage.md)  
    - [ami](./certifications/aws-solutions-architect/ami.md)  
    - [ec2 instance store](./certifications/aws-solutions-architect/ec2-instance-store.md)  
+   - [solutions architecting](./certifications/aws-solutions-architect/solutions-architecture.md)  
 
 # Programs
 

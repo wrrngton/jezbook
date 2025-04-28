@@ -190,15 +190,31 @@ Locations can have a bias, which shifts more traffic to that resource and will g
 ![](assets/geoproximity.png)
 
 
+## Routing policies - IP-based
 
+Routing based on clien-IP's addresses using CIDR blocks
 
+> CIDR blocks are groups of ID addresses sharing the same network prefix. This allows us more control over addressing continuous blocks of IP addresses
 
+If a user IP falls within the range defined by the CIDR blocks, they will be routed to the specified instance: 
 
+![](assets/ip-routing.png)
 
+## Routing policies - multi-value
 
+This returns multiple record values and can be associated with health checks. When a request is made, all valued can be returned and the client can choose one. 
 
+As each record can be associated with a health check, it means that the client can choose a value that is up and running. For e.g if there are 3 records and only 2 are healthy, only 2 will be returned.
 
+![](assets/multi-value.png)
 
+> This is not a substitute for having an ELB
+
+## Domain registrar vs DNS service
+
+You can use any domain name registrar, it doesn't have to be Amazon and you can use Amazon's Route 53 to manage DNS records. 
+
+For e.g buy a domain in GoDaddy and set GoDaddy's Nameservers to Route 53's name servers. Therefore when a request is made to GoDaddy, it will use Route 53's servers for routing. 
 
 
 
