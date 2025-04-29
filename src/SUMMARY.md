@@ -19,14 +19,11 @@
    - [ec2 instance store](./certifications/aws-solutions-architect/ec2-instance-store.md)  
    - [solutions architecting](./certifications/aws-solutions-architect/solutions-architecture.md)  
 
-# Programs
-
-- [TaskWarrior](./programs/taskwarrior/README.md)
-   - [commands](./programs/taskwarrior/commands.md)  
 
 # CLIs
 
 - [CLI](./clis/README.md)
     - [Certbot](./clis/certbot.md)
     - [Jrnl](./clis/jrnl.md)
+    - [Taskwarrior](./clis/taskwarrior.md)
 
