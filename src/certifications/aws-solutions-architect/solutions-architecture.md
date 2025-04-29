@@ -76,4 +76,67 @@ So let's make it multiAZ:
 
 ![](assets/time7.png)
 
+## MyClothes.com
+
+Stateful application, ecommerce use case with a "state" of shopping cart. Customers have details in a DB.
+
+### The problem
+
+With our previous architecture, there is no state and consistency for the user. Our load balance will direct users to different instances each time.
+
+![](assets/stateless.png)
+
+Meaning if a user adds something to carts and navigates away, they lose their shopping cart state.
+
+## Phase 1
+
+To solve this, we can introduce ELB stickiness, which is an ELB feature that ensures the same users accesses the same instance with each request:
+
+![](assets/stickiness.png)
+
+However, this introduces another problem, that if one of our instances goes down, the user will lose their stickiness and their cart will again be empited on refresh.
+
+## Phase 2
+
+To solve this, we can use cookies. The user will have cookies that store the state of their session, such as what producte are in the shopping cart. 
+
+Regardless of which instance the user gets, their state will be passed back and forth between client and server.
+
+![](assets/cookies.png)
+
+This allows us to achieve a stateless architecture, but there are some drawbacks:
+
+- Security risk from cookies being altered
+- Cookies must be less than 4kb 
+- Cookies *must* be validated
+- HTTP requests are heavier
+
+## Phase 3
+
+To overcome some of these drawbacks, instead of using cookies to store all user data, we just use a `session_id` and use ElastiCache or DynamoDB to store the session iinformation (such as cart info).
+
+![](assets/cookie-session.png)
+
+Regardless of what instance the user gets, the `session_id` will retrieve the right info from the DB.
+
+## Phase 4
+
+What about long term user data and not session data?
+
+We can use [RDS](/RDS.md) for long term data such as address etc.
+
+![](assets/sa-rds.png)
+
+## Phase 5
+
+User are reading a lot of data from our website and it isn't scaling. To handle scaling we use RDS read replicas:
+
+![](assets/sa-read-replicas.png)
+
+## Phase 6
+
+To survive disasters we can make our RDS multi az as well. To bolster security we can use security groups between the ELB and our auto scaling group of instances:
+
+![](assets/sa-sg.png)
+
 
