@@ -139,4 +139,55 @@ To survive disasters we can make our RDS multi az as well. To bolster security w
 
 ![](assets/sa-sg.png)
 
+## MyWordpress.com
+
+We're trying to create a fully scalable Wordpress website.
+
+We want website to access and correctly display picture uploads.
+
+These images must be available globally. 
+
+We can use Amazon EBS for this (cloud block storage):
+
+![](assets/wp-ebs.png)
+
+The problem with this approach is reads could hit different EBS volumes and get incorrect images. To solve this, we can switch to EFS:
+
+![](assets/wp-efs.png)
+
+EFS is shared across all our instances, using ENIs and becomes our central image repo.
+
+> EFS is a common way to scale files across instances
+
+## Instantiating apps quickly
+
+- EC2 Instances:
+- Use a Golden AMI: Install your applications, OS dependencies etc.. beforehand
+and launch your EC2 instance from the Golden AMI
+- Bootstrap using User Data: For dynamic configuration, use User Data scripts
+- Hybrid: mix Golden AMI and User Data (Elastic Beanstalk)
+- RDS Databases:
+- Restore from a snapshot: the database will have schemas and data ready!
+- EBS Volumes:
+- Restore from a snapshot: the disk will already be formatted and have data!
+
+## Elastic Beanstalk
+
+Elastic Beanstalk lets developers redeploy the same architecture over and over again.
+
+As devs, we may repeat architectures and we don't want to have to have to reconfigure the same deployments each time.
+
+Beanstalk is a way to manage deploying applications without us having to repeat ourselves. It's a managed service that will handle the deployments for ourselves.
+
+It consists of:
+
+- **Application**: collection of Beanstalk components (environments, versions, configurations etc)
+- **Version**: a new instance of your application code
+- **Environment**: collection of AWS resources, with tiers and environments (dev, staging, prod)
+
+> Environments are either web server (HTTP requests) or worker environments (dealing with queues and messages). [Web servers deal with client requests, workers deal with long running requests](https://stackoverflow.com/questions/43302799/what-are-the-difference-between-worker-tier-and-web-tier-in-aws-beanstalk) (such as handling tasks offloaded by the web server)
+
+![](assets/beanstalk-process.png)
+
+
 
