@@ -6,6 +6,7 @@
 
 - [AWS Solutions Architect](./certifications/aws-solutions-architect/README.md)
    - [intro](./certifications/aws-solutions-architect/intro.md)  
+   - [projects](./certifications/aws-solutions-architect/projects.md)  
    - [infra](./certifications/aws-solutions-architect/infra.md)  
    - [iam](./certifications/aws-solutions-architect/iam.md)  
    - [cli-sdk](./certifications/aws-solutions-architect/cli-sdk.md)  
@@ -18,6 +19,7 @@
    - [ami](./certifications/aws-solutions-architect/ami.md)  
    - [ec2 instance store](./certifications/aws-solutions-architect/ec2-instance-store.md)  
    - [solutions architecting](./certifications/aws-solutions-architect/solutions-architecture.md)  
+   - [s3](./certifications/aws-solutions-architect/s3.md)  
 
 
 # CLIs
