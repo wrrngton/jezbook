@@ -29,3 +29,7 @@
     - [Jrnl](./clis/jrnl.md)
     - [Taskwarrior](./clis/taskwarrior.md)
 
+# Programs
+
+- [Programs](./programs/README.md)
+    [Vim](./programs/vim.md)
