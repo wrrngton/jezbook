@@ -32,4 +32,4 @@
 # Programs
 
 - [Programs](./programs/README.md)
-    [Vim](./programs/vim.md)
+    - [Vim](./programs/vim.md)
