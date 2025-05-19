@@ -20,6 +20,8 @@
    - [ec2 instance store](./certifications/aws-solutions-architect/ec2-instance-store.md)  
    - [solutions architecting](./certifications/aws-solutions-architect/solutions-architecture.md)  
    - [s3](./certifications/aws-solutions-architect/s3.md)  
+   - [s3 security](./certifications/aws-solutions-architect/s3-security.md)  
+   - [cloudfront](./certifications/aws-solutions-architect/cloudfront.md)  
 
 
 # CLIs
