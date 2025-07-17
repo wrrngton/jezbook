@@ -42,4 +42,12 @@
 
 # Courses
 - [Elasticsearch](./courses/elasticsearch/README.md)
-    - [intro](./courses/elasticsearch/intro.md)
+    - [intro](./courses/elasticsearch/1.intro.md)
+    - [2.elastic-stack-elk.md](./courses/elasticsearch/2.elastic-stack-elk.md)
+    - [3.opensearch-vs-es.md](./courses/elasticsearch/3.opensearch-vs-es.md)
+    - [4.hosting-options.md](./courses/elasticsearch/4.hosting-options.md)
+    - [5.useful-commands.md](./courses/elasticsearch/5.useful-commands.md)
+    - [6.elasticsearch-architecture.md](./courses/elasticsearch/6.elasticsearch-architecture.md)
+    - [7.debugging.md](./courses/elasticsearch/7.debugging.md)
+    - [8.CURL-querie.md](./courses/elasticsearch/8.CURL-queries.md)
+    - [9.sharding-and-scalability.md](./courses/elasticsearch/9.sharding-and-scalability.md)
