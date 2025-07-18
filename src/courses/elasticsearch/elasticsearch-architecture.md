@@ -28,7 +28,7 @@ Nodes are what store data in ES.
 
 Indices are collections of document. Indice are the logical way in which to organise collections of documents. For e.g in a movie example, there could be an index for actors, an index for directors and an index for movies themselves.
 
-> Indices aren't separated on disk, indices are just references to logical collection of documents.
+> Indices aren't separated on disk, indices are just references to logical collection of documents. Indices are a logical abstraction, under the hood they are split into shards.
 
 ## Documents
 

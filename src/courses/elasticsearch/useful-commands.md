@@ -23,3 +23,11 @@ bin/elasticsearch-reset-password -u elastic
 ```console
 bin/elasticsearch-create-enrollment-token --scope kibana
 ```
+
+## Generate new Node token
+
+This is useful for when spinning up new nodes in our cluster.
+
+```console
+ bin/elasticsearch-create-enrollment-token --scope node
+```

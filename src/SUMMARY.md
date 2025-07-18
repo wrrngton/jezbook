@@ -52,3 +52,5 @@
     - [CURL-querie.md](./courses/elasticsearch/CURL-queries.md)
     - [sharding-and-scalability.md](./courses/elasticsearch/sharding-and-scalability.md)
     - [replication](./courses/elasticsearch/replication.md)
+    - [adding nodes to clusters](./courses/elasticsearch/adding-nodes-to-clusters.md)
+    - [node roles](./courses/elasticsearch/node-roles.md)
