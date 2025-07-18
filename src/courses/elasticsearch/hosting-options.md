@@ -10,10 +10,6 @@ Offerings like [Bonsai](http://bonsai.io/) will manage your ES cluster for you
 
 This is ES's native offering and lets ES manage your deployment for you. 
 
-apikey: bk5Fa0VwZ0JSaUh1YnFuT3hMYWU6NHk5WEkwTFVtVmU2ZUdMV200eWxpZw==
-password: rl8*b+=iSi6fL=1-62SC 
-kibana token: eyJ2ZXIiOiI4LjE0LjAiLCJhZHIiOlsiMTAuMC40My4xNjE6OTIwMCJdLCJmZ3IiOiI0MDM3ZTVlZDlmNWM5YmYyNjE5MzYwZjU3NzVmNjFmNDYyOGFhNjA4ZjU1Y2VmZDE5MzBiZjk0YThhMWMyMDI3Iiwia2V5IjoiTDRCWUY1Z0JwSmZQeXNrekE4eG06enlxRUhnYy10cnA0U0V6QlUzSVA5QSJ9 
-
 ## Elastic serverless
 
 ES also have a serverless option. This offering autoscales and is stateless and is optimised for *realtime applications*.
