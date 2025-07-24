@@ -1,5 +1,7 @@
 # Opensearch vs Elasticsearch
 
+[relevant docs](https://www.elastic.co/amazon-opensearch-service)
+
 Elasticsearch was originally released as an open source project under the Apache License 2.0, but a paid license was required to use additional feautes, such as security, monitoring, ML etc under the Elastic License.
 
 In 2015, AWS released "Amazon Elasticsearch Service", which was a managed Elasticsearch service on AWS.

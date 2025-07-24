@@ -1,5 +1,7 @@
 # Hosting options
 
+[relevant docs](https://www.elastic.co/docs/deploy-manage)
+
 There are a few hosting options:
 
 ## Elastic/Opensearch on Bonsai or another hosted service
@@ -23,4 +25,3 @@ You can also self host ES on your own machines. You can download ES [here](https
 It will download two archives, one for ES and one for Kibana in separate directories.
 
 It ships with dependencies like Java(ES) and Node.js (Kibana).
-

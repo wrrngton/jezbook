@@ -1,5 +1,7 @@
 # Elasticsearch
 
+[relevant docs](https://www.elastic.co/docs/solutions/search)
+
 This course focuses solely on Elasticsearch, not the total ELK stack (Elastic, Logstash, Kibana).
 
 ## What is ElasticSearch?

@@ -31,3 +31,19 @@ This is useful for when spinning up new nodes in our cluster.
 ```console
  bin/elasticsearch-create-enrollment-token --scope node
 ```
+
+## Know why shards are unassigned
+
+```
+GET /_cluster/allocation/explain
+```
+
+## Check shard health
+
+```
+GET /_cat/shards?v&index=*,-.*,-.internal.*,-.*default*
+```
+
+You will see doc distribution across shards in the response:
+
+![](assets/doc-distrubution.png)
