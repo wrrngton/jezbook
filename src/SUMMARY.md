@@ -59,3 +59,6 @@
     - [optimistic concurrency control](./courses/elasticsearch/optimistic-concurrency-control.md)
     - [bulk api & batch processing](./courses/elasticsearch/bulk-api-batch-processing.md)
     - [analysis](./courses/elasticsearch/analysis.md)
+    - [analyze api](./courses/elasticsearch/analyze-api.md)
+    - [inverted indices](./courses/elasticsearch/inverted-indices.md)
+    - [mapping](./courses/elasticsearch/mapping.md)
